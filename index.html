@@ -5,10 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CHERKO Profile</title>
   <style>
-    body {
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f3f3f3;
+      background-color: #e5e3d5;
     }
     .social-icons {
       display: flex;
@@ -31,18 +37,29 @@
       height: 100%;
       fill: currentColor;
     }
-        
-    .img{
-        margin: 0%;
-        border: 0;
-        text-align: center;
- width: 100%;
-      display: block;
+         .circle-container {
+      margin: 0 auto 15px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #ffd700;
+      animation: spin 15s linear infinite;
+      box-shadow: 0 0 25px #ffd700;
+    } 
+   .circle-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @keyframes spin {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
     }
     .profile-info {
       text-align: center;
       padding: 20px;
-      background: #f3f3f3;
+      background: #d2d0be;
     }
     .stats {
       display: flex;
@@ -98,7 +115,7 @@
   font-size: 24px;
   padding: 12px;
   border-radius: 50%;
-  text-align: center;
+  text-align:center;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
   text-decoration: none;
@@ -108,13 +125,34 @@
   transform: scale(1.1);
   background-color: #20ba5a;
 }
+.telegram-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: black;  /* خلفية سوداء */
+  border-radius: 8px;       /* زوايا مدورة */
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.telegram-icon svg {
+  vertical-align: middle;
+  fill: white;  /* لون علامة التليجرام أبيض */
+  width: 24px;
+  height: 24px;
+}
+
+.telegram-icon:hover {
+  background-color: #1DA1F2;  /* لون أزرق عند المرور */
+}
   </style>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body><div class="img">
-<img src="img/صورة واتساب بتاريخ 2025-07-26 في 17.19.51_cee84ec1.jpg" alt="CHERKO">
-</div>
+  <div class="circle-container">
+  <img src="img/02_02_47 12_16_59 ص.png" alt="CHERKO">
+  </div>
   <div class="profile-info">
     <h2>CHERKO</h2>
     <p>PUBG Mobile player</p>
@@ -145,6 +183,11 @@
       </svg>
     </a>
 
+<a href="https://t.me/@pgcherko" target="_blank" rel="noopener" class="telegram-icon" aria-label="رابط تليجرام">
+  <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+    <path d="M120 0C53.729 0 0 53.729 0 120s53.729 120 120 120 120-53.729 120-120S186.271 0 120 0zm57.024 78.304l-24.442 115.19c-1.846 8.065-6.634 10.056-13.438 6.27l-37.169-27.448-17.933 17.254c-1.979 1.979-3.636 3.636-7.43 3.636l2.66-37.418 67.999-61.37c2.956-2.66-.65-4.141-4.57-1.48l-84.147 52.95-36.206-11.3c-7.85-2.39-7.997-7.85 1.641-11.635l141.805-54.65c6.54-2.39 12.264 1.56 10.792 11.053z"/>
+  </svg>
+</a>
     <div class="icons">
       <i class="fab fa-telegram"></i>
       <i class="fab fa-instagram"></i>
@@ -171,7 +214,7 @@
       <strong>6thStreet</strong>
     </div>
   </div>
-<div class="mones">
+<div class="whatsapp-icon">
   لتواصل مع من قام بإنشاء الموقع 
   <br>
   <br>
@@ -183,3 +226,4 @@
 </div>
 </body>
 </html>
+ 
